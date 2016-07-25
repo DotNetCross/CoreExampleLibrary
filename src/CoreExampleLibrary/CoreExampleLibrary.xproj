@@ -8,8 +8,8 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>c4967cc0-fd75-4c73-a87f-7ed17209d1e1</ProjectGuid>
     <RootNamespace>CoreExampleLibrary</RootNamespace>
-    <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
-    <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
+    <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">..\..\build\obj</BaseIntermediateOutputPath>
+    <OutputPath Condition="'$(OutputPath)'=='' ">..\..\build\bin\</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup>
