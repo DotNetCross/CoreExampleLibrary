@@ -17,6 +17,31 @@ Everything has been setup up so it can be edited, build and tested from:
  * Visual Studio 2015 Update 3
  * .NET Core CLI (incl. a few simple `cmd` files for that)
 
+Files in project:
+```
+|   .gitignore
+|   all.cmd
+|   build.cmd
+|   CoreExampleLibrary.sln
+|   global.json
+|   LICENSE
+|   nuget.config
+|   README.md
+|   restore.cmd
+|   test.cmd
++---.vscode
+|       tasks.json
++---src
+|   \---CoreExampleLibrary
+|           CoreExampleLibrary.xproj
+|           project.json
+|           SomeClass.cs
+\---tests
+    \---CoreExampleLibrary.Tests
+            CoreExampleLibrary.Tests.xproj
+            project.json
+            SomeClassTests.cs
+```
 ## How
 Simply do the following (assuming Windows):
  * Open command prompt e.g. the fantastic `Git Shell`
