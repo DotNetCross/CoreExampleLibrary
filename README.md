@@ -27,6 +27,7 @@ Files in project:
 |   LICENSE
 |   nuget.config
 |   README.md
+|   rename.ps1
 |   restore.cmd
 |   test.cmd
 +---.vscode
@@ -49,12 +50,17 @@ Simply do the following (assuming Windows):
  ```
  git clone https://github.com/DotNetCross/CoreExampleLibrary.git
  ```
+ * Change directory to `CoreExampleLibrary`
+ * OPTIONAL: Rename the project via `rename.ps1` powershell script e.g. to `NewProjectName`:
+```
+rename.ps1 NewProjectName
+```
  * Run .NET Core CLI via script
 ```
 all.cmd
 ```
 ## Output
- * Expected output then is: 
+Expected output then is: 
 ```
 C:\oss\CoreExampleLibrary [master ≡]> .\all.cmd
 
@@ -110,5 +116,4 @@ xUnit.net .NET CLI test runner (64-bit .NET Core win10-x64)
    CoreExampleLibrary.Tests  Total: 1, Errors: 0, Failed: 0, Skipped: 0, Time: 0.201s
 SUMMARY: Total: 1 targets, Passed: 1, Failed: 0.
 ```
-
-## 
+NOTE: How slow the restore is, even when there is nothing to restore.
