@@ -4,13 +4,13 @@
     "version": "0.1.0",
     "command": "dotnet",
     "isShellCommand": true,
-    "args": [  ],
+    "args": [ ],
     "tasks": [
         {
             "taskName": "build",
             // TODO: Replace project paths here
             //       https://wannabeegeek.com/2016/07/18/adding-vs-code-build-task-for-dotnet-core-app-with-multiple-projects/
-            "args": [ "src/CoreExampleLibrary", "tests/CoreExampleLibrary.Tests" ],
+            "args": [ "**/project.json" ],
             "isBuildCommand": true,
             "showOutput": "silent",
             "problemMatcher": "$msCompile"
