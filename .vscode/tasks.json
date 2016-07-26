@@ -8,8 +8,6 @@
     "tasks": [
         {
             "taskName": "build",
-            // TODO: Replace project paths here
-            //       https://wannabeegeek.com/2016/07/18/adding-vs-code-build-task-for-dotnet-core-app-with-multiple-projects/
             "args": [ "**/project.json" ],
             "isBuildCommand": true,
             "showOutput": "silent",
@@ -17,8 +15,7 @@
         },
         {
             "taskName": "test",
-            // TODO: Replace project paths here
-            //       https://wannabeegeek.com/2016/07/18/adding-vs-code-build-task-for-dotnet-core-app-with-multiple-projects/
+            // TODO: Add new test project paths here
             "args": [ "tests/CoreExampleLibrary.Tests" ],
             "isTestCommand": true,
             "showOutput": "silent",
